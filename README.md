@@ -54,17 +54,19 @@ El proyecto tiene dos modos de cámara y varias formas de interacción:
     - Teclas: **W** = adelante, **S** = atrás, **A** = izquierda, **D** = derecha.
     - Ratón: mantener clic y arrastrar (`dragToLook = true`) para rotar la cámara.
     - Uso: buena para explorar libremente el sistema.
-    <img width="1901" height="896" alt="Captura de pantalla 2025-10-30 123547" src="https://github.com/user-attachments/assets/de4066ee-40e3-43b6-b2a9-41e3153d5f4e" />
+  <img width="1901" height="896" alt="Captura de pantalla 2025-10-30 123547" src="https://github.com/user-attachments/assets/aa1475d6-83cd-4a95-a482-d08d182cdd47" />
+
 
 - Cámara Orbit (modo orbital):
     - Controlador: `OrbitControls`.
     - Ratón: botón izquierdo arrastra/rota alrededor del objetivo, rueda hace zoom, botón derecho/shift+arrastrar para pan (configurable).
-    <img width="1901" height="892" alt="Captura de pantalla 2025-10-30 123730" src="https://github.com/user-attachments/assets/8f4f04c6-aa14-4bb7-b5b4-2e374b5972aa" />
+  <img width="1901" height="892" alt="Captura de pantalla 2025-10-30 123730" src="https://github.com/user-attachments/assets/d6adf64c-4970-4e9a-b0c6-c44eb97714ec" />
+
 
 - Alternancia de cámaras:
     - Tecla `e`: alterna entre **Fly** y **Orbit** (el código evita alternar si el foco está en un input/textarea o si el elemento es `contentEditable`).
     - Hay un botón en la UI (arriba a la derecha del canvas) para alternar manualmente. Cuando se cambia a Orbit, la cámara orbital se posiciona en un punto fijo (20,10,20) y su *target* se fija al centro.
-    <img width="224" height="83" alt="Captura de pantalla 2025-10-30 123830" src="https://github.com/user-attachments/assets/21b34be6-0784-40bb-9e6c-07f3fc9c56c8" />
+   <img width="224" height="83" alt="Captura de pantalla 2025-10-30 123830" src="https://github.com/user-attachments/assets/7d669a32-0842-4613-83a6-aa3213f152ad" />
 
 
 - Click sobre el canvas (cuando la cámara activa es Orbit):
@@ -83,7 +85,8 @@ Botones:
 - **Crear Planeta:** crea un planeta con los parámetros indicados y lo añade a la escena.
 - **Lista desplegable "Sistema Solar":** muestra los planetas actuales (nombre y distancia). Selecciona uno para eliminarlo.
 - **Borrar Planeta:** borra el planeta seleccionado y sus lunas asociadas.
-<img width="224" height="303" alt="Captura de pantalla 2025-10-30 124036" src="https://github.com/user-attachments/assets/aa39ee57-b325-40ec-9355-3429ec50ab2a" />
+<img width="224" height="303" alt="Captura de pantalla 2025-10-30 124036" src="https://github.com/user-attachments/assets/99f5d7c7-826e-4ab4-91ce-2b2c66cbda17" />
+
 
 Internamente, los planetas creados por la UI usan la función `Planeta(...)` que añade un `Mesh` y una `Line` (órbita) y guarda metadatos en `mesh.userData`.
 
