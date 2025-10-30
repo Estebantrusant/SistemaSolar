@@ -1,0 +1,17 @@
+{
+  "name": "threejs-example",
+  "version": "1.0.0",
+  "description": "Demo basic scene",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "dependencies": {
+    "lil-gui": "^0.19.0",
+    "three": "^0.152.1",
+    "parcel": "^2.16.0"
+  },
+  "keywords": [
+    "threejs"
+  ]
+}
