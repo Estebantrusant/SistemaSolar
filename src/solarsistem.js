@@ -627,6 +627,7 @@ function Planeta(
   // Marcar actualización del material y crear el mesh
   material.needsUpdate = true;
   let planeta = new THREE.Mesh(geom, material);
+  planeta.rotation.x = Math.PI / 2;
   planeta.userData.dist = dist;
   planeta.userData.speed = vel;
   planeta.userData.f1 = f1;
@@ -651,6 +652,7 @@ function Planeta(
     texcloud.needsUpdate = true;
     let cloudMesh = new THREE.Mesh(cloudGeom, cloudMat);
     cloudMesh.name = "CloudLayer";
+    cloudMesh.rotation.x = Math.PI / 2;
     planeta.add(cloudMesh);
   }
 
@@ -712,7 +714,7 @@ function animationLoop() {
       Math.sin(angle) * object.userData.f2 * object.userData.dist;
 
     // Rotación sobre su propio eje (rotación diurna)
-    object.rotation.z += 0.01;
+    object.rotation.y += 0.01;
 
     // Si es la Tierra (por nombre), rota la capa de nubes en sentido contrario
     if (object.userData.nombre === "Tierra") {
