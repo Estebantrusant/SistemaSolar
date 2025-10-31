@@ -254,7 +254,7 @@ function init() {
   );
   //Texturas de Saturno
   const saturnmap = new THREE.TextureLoader().load(
-    new URL("/src/planets_texture/jupitermap.jpg", import.meta.url)
+    new URL("/src/planets_texture/saturnmap.jpg", import.meta.url)
   );
   //Texturas de Urano
   const uranusmap = new THREE.TextureLoader().load(
