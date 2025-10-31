@@ -12,7 +12,7 @@ Este README ampliado explica en detalle los controles y que funciones se pueden 
 
 ---
 
-## 🚀 Ejecución del Proyecto en Local
+## Ejecución del Proyecto en Local
 
 Para poder ver y modificar esta práctica, necesitas tener **Node.js** y **npm** instalados. El proyecto utiliza **Parcel** como bundler y servidor de desarrollo local.
 
@@ -94,3 +94,5 @@ Internamente, los planetas creados por la UI usan la función `Planeta(...)` que
 
 ## Referencias
 Todas las texturas, mapas de rugosidad, mapas de transparencia y el mapa de reflexión especular de la Tierra han sido sacados de [aquí](https://planetpixelemporium.com/planets.html).
+
+Link del codigo en Codesandbox: https://codesandbox.io/p/sandbox/ig2526-s7-esteban-235x8f
